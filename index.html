@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BlazeTopia - Growtopia Private Server</title><meta property="og:title" content="BlazeTopia - Growtopia Private Server">
-<meta property="og:description" content="Join BlazeTopia and play on Android, iOS & Windows.">
-<meta property="og:image" content="https://cdn.phototourl.com/free/2026-07-30-11942640-781d-4228-8db8-387799b1bd66.png"><meta name="theme-color" content="#d60000"><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Indonesia Private Server</title><meta property="og:title" content="Indonesia Private Server">
+<meta property="og:description" content="Join Indonesia Private Server and play on Android, iOS & Windows.">
+<meta property="og:image" content="https://cdn.phototourl.com/free/2026-07-30-11942640-781d-4228-8db8-387799b1bd66.png"><meta name="theme-color" content="#e70012"><style>
 
 *{
 margin:0;
@@ -14,7 +14,15 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#3b0000;
+background:
+linear-gradient(
+to bottom,
+#e70012 0%,
+#e70012 50%,
+#ffffff 50%,
+#ffffff 100%
+);
+
 color:#ffffff;
 overflow-x:hidden;
 min-height:100vh;
@@ -27,8 +35,11 @@ inset:0;
 
 background:
 linear-gradient(
-rgba(255,255,255,.08),
-rgba(80,0,0,.78)
+to bottom,
+rgba(231,0,18,.72) 0%,
+rgba(231,0,18,.78) 50%,
+rgba(255,255,255,.78) 50%,
+rgba(255,255,255,.88) 100%
 ),
 url("https://cdn.phototourl.com/free/2026-07-30-11942640-781d-4228-8db8-387799b1bd66.png");
 
@@ -46,11 +57,12 @@ position:fixed;
 inset:0;
 
 background:
-radial-gradient(
-circle at top,
-rgba(255,255,255,.22),
-rgba(180,0,0,.30),
-rgba(40,0,0,.90)
+linear-gradient(
+to bottom,
+rgba(255,0,0,.15),
+rgba(255,0,0,.05) 50%,
+rgba(255,255,255,.15) 50%,
+rgba(255,255,255,.30)
 );
 
 z-index:-1;
@@ -69,16 +81,20 @@ padding:26px;
 border-radius:24px;
 
 background:
-rgba(90,0,0,.72);
+linear-gradient(
+to bottom,
+rgba(220,0,18,.90),
+rgba(185,0,15,.88)
+);
 
 backdrop-filter:blur(15px);
 
 border:
-1px solid rgba(255,255,255,.55);
+1px solid rgba(255,255,255,.75);
 
 box-shadow:
-0 0 40px rgba(255,255,255,.16),
-0 0 40px rgba(255,0,0,.25);
+0 0 40px rgba(220,0,18,.35),
+0 0 25px rgba(255,255,255,.20);
 
 text-align:center;
 }
@@ -94,9 +110,9 @@ white-space:nowrap;
 background:
 linear-gradient(
 90deg,
-#ff1a1a,
 #ffffff,
-#ff1a1a
+#ffffff,
+#ffdada
 );
 
 -webkit-background-clip:text;
@@ -127,8 +143,6 @@ padding:16px 10px;
 border:none;
 border-radius:18px;
 
-color:#ffffff;
-
 font-size:15px;
 font-weight:800;
 
@@ -144,30 +158,39 @@ transform:translateY(-4px);
 .discord{
 background:
 linear-gradient(
-90deg,
-#d60000,
-#ffffff,
-#d60000
+to bottom,
+#e70012 0%,
+#e70012 50%,
+#ffffff 50%,
+#ffffff 100%
 );
 
-color:#7a0000;
+color:#8f000c;
+
+border:
+1px solid rgba(255,255,255,.85);
 
 box-shadow:
-0 0 18px rgba(255,255,255,.25);
+0 0 18px rgba(255,255,255,.30);
 }
 
 .play{
 background:
 linear-gradient(
-90deg,
-#ff2020,
-#b00000
+to bottom,
+#ffffff 0%,
+#ffffff 50%,
+#e70012 50%,
+#e70012 100%
 );
 
-color:#ffffff;
+color:#99000c;
+
+border:
+1px solid rgba(255,255,255,.85);
 
 box-shadow:
-0 0 18px rgba(255,0,0,.28);
+0 0 18px rgba(255,0,0,.30);
 }
 
 /* SCROLL */
@@ -183,7 +206,12 @@ text-align:center;
 
 margin:35px 0;
 
-color:#ffffff;
+color:#9b000d;
+
+font-weight:700;
+
+text-shadow:
+0 1px 4px rgba(255,255,255,.80);
 }
 
 .arrow{
@@ -210,19 +238,20 @@ padding:26px;
 border-radius:24px;
 
 background:
-rgba(90,0,0,.72);
+rgba(255,255,255,.92);
 
 backdrop-filter:
 blur(15px);
 
 border:
-1px solid rgba(255,255,255,.55);
+2px solid #e70012;
 
 box-shadow:
-0 0 40px rgba(255,255,255,.12),
-0 0 40px rgba(255,0,0,.22);
+0 0 40px rgba(231,0,18,.25);
 
 margin-bottom:25px;
+
+color:#85000b;
 }
 
 .title{
@@ -234,10 +263,10 @@ font-weight:900;
 
 margin-bottom:10px;
 
-color:#ffffff;
+color:#d60012;
 
 text-shadow:
-0 0 12px rgba(255,0,0,.65);
+0 0 10px rgba(231,0,18,.20);
 }
 
 .desc{
@@ -245,7 +274,7 @@ text-align:center;
 
 font-size:14px;
 
-color:#ffffff;
+color:#650008;
 
 margin-bottom:30px;
 }
@@ -253,11 +282,11 @@ margin-bottom:30px;
 .label{
 font-size:15px;
 
-font-weight:700;
+font-weight:800;
 
 margin:15px 0 7px;
 
-color:#ffffff;
+color:#d60012;
 }
 
 .card{
@@ -268,25 +297,31 @@ margin-bottom:14px;
 border-radius:18px;
 
 background:
-rgba(255,255,255,.12);
+linear-gradient(
+to bottom,
+#e70012 0%,
+#e70012 50%,
+#ffffff 50%,
+#ffffff 100%
+);
 
 border:
-1px solid rgba(255,255,255,.45);
+1px solid #d60012;
 
 cursor:pointer;
 
 transition:.25s;
+
+box-shadow:
+0 4px 12px rgba(231,0,18,.12);
 }
 
 .card:hover{
 transform:
 translateY(-3px);
 
-border-color:
-#ffffff;
-
 box-shadow:
-0 0 18px rgba(255,255,255,.20);
+0 0 20px rgba(231,0,18,.35);
 }
 
 .card p{
@@ -294,9 +329,14 @@ font-size:13px;
 
 line-height:1.7;
 
-color:#ffffff;
+color:#700009;
+
+font-weight:800;
 
 word-break:break-word;
+
+text-shadow:
+0 1px 2px rgba(255,255,255,.75);
 }
 
 /* FOOTER */
@@ -306,12 +346,14 @@ text-align:center;
 
 font-size:14px;
 
-color:#ffffff;
+font-weight:800;
+
+color:#a0000c;
 
 margin-top:20px;
 
 text-shadow:
-0 0 10px rgba(255,0,0,.55);
+0 1px 5px rgba(255,255,255,.90);
 }
 
 </style></head><body><div class="container"><div class="hero"><h1>Welcome to
@@ -362,7 +404,7 @@ onclick="copyText('149.202.58.185 www.growtopia1.com\n149.202.58.185 www.growtop
 
 <br>149.202.58.185 www.growtopia2.com
 
-</p></div></div><div class="footer">Enter the Flames. Rule the World.
+</p></div></div><div class="footer">🇮🇩 Indonesia Private Server 🇮🇩
 
 </div></div><script>
 
@@ -384,19 +426,20 @@ bottom:"25px",
 
 transform:"translateX(-50%)",
 
-background:"#d60000",
+background:
+"linear-gradient(to bottom,#e70012 0%,#e70012 50%,#ffffff 50%,#ffffff 100%)",
 
-color:"#ffffff",
+color:"#85000b",
 
 padding:"12px 28px",
 
 borderRadius:"14px",
 
-fontWeight:"700",
+fontWeight:"800",
 
-border:"1px solid #ffffff",
+border:"2px solid #e70012",
 
-boxShadow:"0 0 20px rgba(255,255,255,.30)",
+boxShadow:"0 0 20px rgba(231,0,18,.35)",
 
 zIndex:"9999"
 
@@ -426,4 +469,4 @@ navigator.clipboard
 }
 
 </script></body>
-          </html>
+</html>
